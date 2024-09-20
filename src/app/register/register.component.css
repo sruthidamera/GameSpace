@@ -1,0 +1,34 @@
+
+
+button{
+    background-color: #a30bc5;
+}
+
+.sing{
+    color: white;
+}
+
+.backg{
+    background-image: url("https://wallpapercave.com/wp/wp7132913.jpg");
+
+    /* https://wallpapercave.com/wp/wp7132913.jpg */
+    height: 549px;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -17px;
+    
+}
+
+
+.form-control{
+    box-shadow: unset;
+    background: inherit;
+}
+input[placeholder]{
+    color: white;
+}
+
+#login{
+    text-decoration: none;
+}

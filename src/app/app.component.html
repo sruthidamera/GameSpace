@@ -1,0 +1,60 @@
+
+
+
+<nav class="navbar navbar-expand-md navbar-dark mb-3 fixed-top backg">
+  <div class="container-fluid">       
+      <a routerLink="logomod" class="text-white  navbar-brand " id="logo">Logo</a> 
+      
+      <button class="navbar-toggler text-white change" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon "></span>
+       </button>
+       <div id="opt1">
+        <a routerLink="add2cart" ><i class="fas fa-shopping-cart cart"><sub class="bg-white css">{{num}}</sub> </i></a>
+        <a routerLink="userdashboard"><i class="fas fa-user user"  ></i></a>
+     </div>
+       
+     <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto ">
+          <li class="nav-item">
+              <a routerLink="home" class=" text-white nav-link "  routerLinkActive="active">Home</a>
+          </li>
+
+          <li class="nav-item ">
+              <a routerLink="popular" class=" text-white nav-link  "  routerLinkActive="active">Popular</a>
+              
+          </li>
+          <li class="nav-item ">
+              <a routerLink="trending" class=" text-white nav-link  " routerLinkActive="active">Trending</a>
+          </li>
+          
+          <li class="nav-item ">
+              <a  routerLink="register" class=" text-white nav-link d-none d-md-block" routerLinkActive="active">Register</a>
+          </li> 
+          <li class="nav-item" >
+              <a routerLink="dashboard" class="  nav-link text-white  " routerLinkActive="active">Login</a>
+          </li>
+          
+        </ul>
+        <form class="form-inline" #variable="ngForm" (ngSubmit)="onSubmit(variable)">
+          <div class="input-group " >               
+            <input type="search" class="form-control " placeholder="Search" name="searchtitle" [(ngModel)]="searchtitle">
+               <button (click)="searchIcon()" class="btn icon search" type="submit" ><i class="fas fa-search"></i></button> 
+            </div>
+        </form>
+     </div>
+     <div id="opt">
+    <a routerLink="add2cart" ><i class="fas fa-shopping-cart cart"><sub class="bg-dark css">{{num}}</sub> </i>
+    </a>
+    <!-- <button class="badge "id="num" > 3</button> -->
+        <a routerLink="userdashboard"><i class="fas fa-user user"  ></i></a>
+     </div>
+  </div>
+
+</nav>
+
+<!-- <app-home  [size]="num" (sizeChange)="num=$event"></app-home> -->
+
+   
+<router-outlet></router-outlet>
+
+

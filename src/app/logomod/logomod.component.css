@@ -1,0 +1,125 @@
+.carousel{
+    margin-top:-18px;
+}
+
+i{
+    margin-left: -9%;
+}
+
+button.transition{ 
+    transition: all 500ms ease; 
+    padding: 10px 20px;   
+    background:#a30bc5;
+    box-shadow: unset;
+    border:2px solid #a30bc5;
+    
+  }
+
+.transition:hover{
+    
+    transform: scale(1.2);
+  }
+
+  
+.carousel:hover {
+    opacity: 1.0;
+}
+.text{
+  text-decoration: none;
+}
+
+button.mod{
+  background-color: red;
+}
+
+
+.card{
+  width: 100%;
+
+  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+ 
+}
+
+.card-title{
+  font: bold;
+  font-size: 30px;
+}
+
+sub{
+  vertical-align: super;
+  font-size: small;
+}
+
+.card:hover{
+  transform: scale(1.1,1.1);
+  box-shadow: 3px 3px 20px 3px   #a30bc5;
+}
+
+
+#readclick{
+  color:white;
+  background-color: #a30bc5;
+
+}
+
+#more{
+  display: none;
+}
+
+#more1{
+  display: none;
+}
+
+#more2{
+  display: none;
+}
+
+#more3{
+  display: none;
+}
+
+#more4{
+  display: none;
+}
+
+#more5{
+  display: none;
+}
+
+
+#readclick.btn{
+  box-shadow: none;
+  float: right;
+  
+}
+#readclick1.btn{
+  box-shadow: none;
+  float: right;
+  color:white;
+  background-color: #a30bc5;
+}
+#readclick2.btn{
+  box-shadow: none;
+  float: right;
+  color:white;
+  background-color: #a30bc5;
+}
+#readclick3.btn{
+  box-shadow: none;
+  float: right;
+  color:white;
+  background-color: #a30bc5;
+}
+#readclick4.btn{
+  box-shadow: none;
+  float: right;
+  color:white;
+  background-color: #a30bc5;
+}
+#readclick5.btn{
+  box-shadow: none;
+  float: right;
+  color:white;
+  background-color: #a30bc5;
+}

@@ -1,0 +1,154 @@
+.backg{
+     background-color:#a30bc5 ;  
+    
+   position: relative;
+  
+   margin-bottom: 40px;
+  
+    
+  }
+  .displ{
+      display: inline;
+  }
+  .colo{
+      color: black;
+  }
+  .dismisal{
+      width:20px;;
+  }
+  .hint{
+      margin-top:9rem;
+  }
+  .click:hover{
+      background-color: green;
+  }
+  .exit{
+      float:right;
+  
+  }
+  
+  btn:hover{
+      background-color:greenyellow;
+  }
+  .active{
+      border-bottom:2px solid white;
+  }
+  
+  .menu{
+      background-color: gray;
+  }
+  
+  .menu a:hover{
+      background-color:  white;  
+  
+      color: gray;
+  }
+  
+  /*a:hover{
+  
+      font-family: 'Creepster', serif;
+      font-size: 1.2em;
+      letter-spacing: 3px;
+  }*/
+  
+  
+  button.search{
+      
+    background-color:#a30bc5;
+      transition: all 500ms ease; 
+  
+    }
+  
+    button.search{ 
+      padding: 10px 10px;  
+    
+    }
+  
+   button.search:hover{
+     
+      transform: scale(1.2);
+
+    }  
+  .img{
+        display: inline-block;
+    }
+
+  .form-control{
+      box-shadow: none;
+  }  
+
+  .change{
+      border: 5px 5px 5px 5px solid white;
+ 
+  }
+
+  .icon{
+      color: white;
+  }
+
+#opt{
+    display: flex;
+    
+}
+
+#opt1{
+    display: none;
+}
+
+@media all and (max-width:768px){
+   
+
+
+    #opt{
+        display: none;
+    }
+
+    #opt1{
+        display: inline;
+    }
+
+    #logo{
+        margin-right: auto;
+
+    }
+
+}
+
+.cart{
+    color: white;
+ font-size: x-large;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.user{
+    color: white;
+    font-size: x-large;
+    margin-left: 5px;
+}
+
+#num{
+    top: -20px;
+}
+
+sub{
+    position: relative;
+    top:-10px;
+    padding: 5px;
+    font-size: 5px;
+    background: inherit;
+}
+
+.css{
+    color: #a30bc5;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.add{
+
+    margin-top:50px;
+}
+
+

@@ -1,0 +1,97 @@
+.input-group{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#login{
+    font-size: xx-large;
+}
+
+#user_icon{
+    height: 100%;
+    
+}
+
+#email{
+    font-family: FontAwesome;
+}
+
+#password{
+    font-family: FontAwesome;
+}
+
+input{
+    background: inherit;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    text-decoration-color: white;
+}
+
+input[placeholder]{
+    color: white;
+    text-decoration-color: white;
+
+}
+::placeholder{
+    color: white;
+}
+
+input:focus{
+    background: inherit;
+    box-shadow: none;
+    border-color: darkgray;
+}
+
+.form-group{
+    margin-top: 20px;
+}
+
+#eye{
+    background: inherit;
+  border-top: none;
+  position: relative;
+  top:10px;
+  border-bottom:1px solid darkgray;
+  cursor: pointer;
+  color: white;
+  
+}
+
+#s_eye{
+    background: inherit;
+    display: none;
+    border-top: none;
+    position: relative;
+    top:10px;
+    border-bottom:1px solid darkgray;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.form-control{
+    border-bottom: 1px solid darkgray; 
+}
+
+#bimg{
+    background-image: url("https://wallpapercave.com/wp/wp7132913.jpg");
+    height: 549px;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -17px;
+    
+}
+
+.col-md-6{
+    border: 2px 2px 2px 2px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);;
+}
+
+button{
+    background-color: #a30bc5;
+}

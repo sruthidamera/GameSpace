@@ -1,0 +1,69 @@
+
+<div class="backg">
+   
+    <div class="col-md-6 d-block mx-auto" id="register">
+      <p class="display-3 text-center  sing">Sign In</p>
+        
+     <form #totalForm="ngForm" (ngSubmit)="onSubmit(totalForm)">
+      <div class="form-floating mt-3">
+        <input type="text" id="username"  class="form-control"  autocomplete="off" #ref2="ngModel" required name="username" placeholder="enter the name" ngModel>
+        <label for="text" class="sing">username</label>
+        <div *ngIf=" ref2.invalid && (ref2.dirty || ref2.touched)" class="text-danger">
+            <small >*Username is required</small>
+        </div>
+      </div>
+    <div class="form-floating mt-3">
+        <input type="email" id="email" class="form-control"  autocomplete="off" name="email" #ref1="ngModel" pattern=".*@gmail.com" placeholder="example@gmail.com" ngModel required> 
+        <label for="email" class="sing">Email</label>
+        <div *ngIf="ref1.invalid && (ref1.dirty || ref1.touched)" class="text-danger">
+  
+            <small *ngIf="ref1.errors?.required ">
+              *Email is required.
+            </small>
+            <small *ngIf="ref1.errors?.pattern">
+                *Enter valid email.
+              </small>
+            
+        </div>
+    </div>
+    <div class="form-floating mt-3">
+        <input type="password" placeholder="enter the name"  name="password" #ref="ngModel" id="pwd" ngModel  minlength="6" class="form-control" required>
+        <label for="pwd" class="sing">password</label>
+     
+    <div *ngIf="ref.invalid && (ref.dirty || ref.touched)" class="text-danger">
+    
+      <small *ngIf="ref.errors?.required">
+        *Password is required.
+      </small>
+      <small *ngIf="ref.errors?.minlength">
+        *Password must be at least 6 characters long.
+      </small>
+    </div>
+    
+    </div> 
+    
+    
+    
+    <div class="form-floating mt-3">
+        <input type="password" id="password" class="form-control" minlength="6" #ref3="ngModel" required name="confirmpassword" placeholder="enter password"  ngModel >
+        <label for="confirmpwd" class="sing">Confirm password</label>
+        <div *ngIf="ref3.invalid && (ref3.dirty || ref3.touched)" class="text-danger">
+    
+            <small *ngIf="ref3.errors?.required">
+              *Password is required.
+            </small>
+            <small *ngIf="ref3.errors?.minlength">
+              *Password must be same as above.
+            </small>
+          </div>
+    </div>
+      <!-- <input type="file" class="form-control" (change)="incomingfile($event)" name="photo" accept='image/*' placeholder="Upload file" > -->
+      <p class="text-center text-white">Already member?<a routerLink="" (click)="goTOLogin()" id="login">Login</a> </p>
+    <button type="submit" [disabled]="totalForm.invalid" class="btn btn-lg text-white mt-3 mb-3 d-block mx-auto">Register</button> 
+    
+     </form>
+  
+  
+    </div>
+
+</div>
